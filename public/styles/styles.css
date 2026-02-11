@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    color: #333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    background-color:blue
+}
+
+main{
+    padding: 20px;
+    border-radius: 10px;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+main form header {
+  position: relative;  
+  height: 250px;       
+  margin-bottom: .5rem;
+  overflow: hidden;    
+}
+main form header img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+main form header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  z-index: 2;        
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);  
+  margin: 0;
+  padding: 0 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color:aliceblue
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+button{
+    font-size: 1rem;
+    margin: 1rem auto 0 auto;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    width:50%;
+    align-self: center;
+}
+
+/* Destination: full width row */
+.destination-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.destination-row label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+.destination-row select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+/* Departure + Travelers: side-by-side */
+.two-col-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.two-col-row > div {
+  flex: 1;  /* Equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+.two-col-row label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+.two-col-row input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 0.25rem;
+}

@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vacation Booking Midterm</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src=" js/vacation.js" defer></script>
 </head>
 <body>
+    <main>
+        <form novalidate id="vacation-form" action="/submit-inquiry" method="POST">
+            <header>
+                <h1>Book Your Dream Vacation</h1>
+                <img src="imgs/midterm_vacation.jpg" alt="sunset at a beach">
+            </header>
+            <fieldset>
+                <!-- destination selections -->
+                <div class="destination-row">
+                <label for="destination">Destination:</label>
+                <span></span>
+                <select name="city" id="city">
+                    <option value=""disabled selected>Select a city</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="catania">Catania</option>
+                    <option value="stabia">Castellammare Di Stabia</option>
+                    <option value="foggia">Foggia</option>
+                    <option value="napoli">Napoli</option>
+                    <option value="roma">Roma</option>
+                </select>
+                </div>
+
+                <!-- departure -->
+                <div class="two-col-row">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date">
+
+                <!-- Number of travelers -->
+                 <label for="travelers">Number of Travelers:</label>
+                 <span></span>
+                 <input type="number" id="travelers" name="travelers" min="1" max="10">
+                </div>
+                <button type="submit" id="vacation-button" role="button">Find Personalized Vacation</button>
+                <br>
+            </fieldset>
+        </form>
+    </main>
     
 </body>
 </html>

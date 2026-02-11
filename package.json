@@ -1,0 +1,24 @@
+{
+  "name": "vacation_booking_midterm",
+  "version": "1.0.0",
+  "description": "SDEV 305 Midterm Exam- a node application for booking a vacation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabinMas/Vacation_Booking_Midterm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sabinMas/Vacation_Booking_Midterm/issues"
+  },
+  "homepage": "https://github.com/sabinMas/Vacation_Booking_Midterm#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
